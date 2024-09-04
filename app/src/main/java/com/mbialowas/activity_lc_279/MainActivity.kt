@@ -25,5 +25,30 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
+
+        Log.d(TAG, "onStart got called")
     }
+    override fun onResume() {
+        super.onResume()
+        Log.d(TAG, "onResume got called")
+
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Log.d(TAG, "onPause got called")
+    }
+    override fun onStop() {
+        super.onStop()
+        Log.d(TAG, "onStop got called")
+    }
+    override fun onRestart() {
+        super.onRestart()
+        Log.d(TAG, "onRestart got called")
+    }
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.d(TAG, "onDestroy got called")
+    }
+
 }
